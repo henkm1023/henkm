@@ -1,6 +1,7 @@
 function doClick() {
     alert('You Clicked!');
 }
+
 function changeText(id) {
     // alert('You Clicked!');
     id.innerHTML = 'You clicked me!';
@@ -9,24 +10,28 @@ function changeText(id) {
     var time = document.getElementById('time');
     time.innerHTML = Date();
 }
+
 function doHover(id) {
     id.innerHTML = 'Too close buddy!';
 }
+
 function resetButton(id) {
     id.innerHTML = 'Show date';
 }
+
 function changeBackground(id) {
     var body = document.getElementById('body');
     var navbar = document.getElementById('navbar');
     body.style.backgroundColor = id.value;
 }
+
 function validateForm() {
     var firstName = document.forms["myForm"]["firstName"].value;
-    if(firstName == null || firstName ==""){
+    if (firstName == null || firstName == "") {
         alert("First Name is required");
         return false;
     }
-    if(firstName.length < 3){
+    if (firstName.length < 3) {
         alert("First Name must contain at least 3 characters");
         return false;
     }
