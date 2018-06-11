@@ -1,0 +1,75 @@
+body {
+	background-color: black;
+	/*background: url("Stormlight1.jpg");*/
+	background-position: center top;
+	background-size: cover;
+}
+h1 {
+	/*background: url("ESCAPE.gif") no-repeat top left;*/
+	color:red; 
+	font-family:"Brush Script MT","Times New Roman", Times, serif; 
+	font-size:4vw;
+	font-variant: small-caps;
+	text-align:center;
+	letter-spacing: 1px;
+	text-shadow: 5px 5px maroon;
+}
+h2 {
+	border: 5px solid white;
+	border-radius: 30px;
+	color:lightgreen;
+	font-family:Batang;
+	font-size:1vw;
+	margin: 25px;
+	/* margin-top: 1px;
+	margin-right: 1x;
+	margin-bottom: 1px;
+	margin-left: 1px; */
+	padding: 10px;
+	text-align:center;
+}
+p {
+	color:white; 
+	font-family:courier, "Times New Roman", Times, serif;
+	font-size:1vw;
+	text-align:center;
+}
+.container {
+	margin:auto;
+	width: 50%;
+}
+.box {
+   display: flex;
+   align-items:center;
+}
+/*
+#p01 {
+	color:green;
+}
+p.error {
+	background-color:rgba(0, 255, 71, 0.1);
+	color:red;
+}
+#p02 {
+	border: 5px solid rgba(255, 55, 71, 0.);
+	font-size: 22px;
+	text-align: right;
+}
+.right {
+	text-align: right;
+}
+.orange {
+	background-color: rgba(25, 255, 255, 0.5);
+	color: orange;
+}
+.bv {
+	font-family: Baskerville old face;
+}
+*/
+.ancient {
+	color:white;
+	font-family:Times new roman;
+	/*font-size:30px;*/
+	font-size:2vw;
+	text-align:center;
+}

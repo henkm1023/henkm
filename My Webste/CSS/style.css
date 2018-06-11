@@ -1,0 +1,170 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header {
+    background-color: black;
+    color: #fff;
+    letter-spacing: 0.5em;
+    word-spacing: 0.5em;
+    line-height: 2em;
+}
+
+#main-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-header a:hover {
+    color:red;
+}
+
+#navbar {
+    background-color: rgb(31, 30, 30);
+    color:white;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover {
+    color:red;
+}
+
+#showcase {
+    background-image: url('../images/stormlight1.jpg');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    color: darkred;
+	text-shadow: 5px 5px black;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 10px;
+}
+
+#main-banner {
+    float: left;
+    width: 15%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#side-banner {
+    float: right;
+    width: 80%;
+    padding: 5em 0 0 0;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#main {
+    float: left;
+    width: 60%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#main h1, #sidebar h1 {
+    color: rgb(128, 84, 84);
+}
+
+#main h3 {
+    text-align: center;
+    color: red;
+}
+
+#sidebar {
+    float: right;
+    background: rgb(31, 30, 30);
+    color: white;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+p:hover{
+    color:gold;
+}
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#map {
+    height: auto;
+    box-sizing: border-box;
+}
+
+#map img.resize {
+    max-width:100%;
+    max-height:100%;
+}
+
+#main h1 + p + p + p + p + p + p + p {
+    color: red;
+	text-shadow: 5px 5px darkred;
+}
+
+#main p:nth-child(2n+1){
+    color: #912618;
+}
+
+#sidebar p:nth-child(2n+2){
+    color: #912618;
+}
+
+@media (max-width:600px) {
+    #main {
+        float: none;
+        width: 100%;
+    }
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+    #map {
+        max-width:40%;
+        max-height:40%;
+    }
+    #main-banner {
+        float: none;
+        width: 100%;
+    }
+    #side-banner {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: 0px; 
+    }
+}
