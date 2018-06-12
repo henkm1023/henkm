@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+li strong {
+    color: red;
+}
+
 #main-header {
     /* background-color: black; */
     color: #fff;

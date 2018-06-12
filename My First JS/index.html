@@ -23,11 +23,25 @@
         <hr>
         <h1 class="main-header">Some GIT commands</h1>
         <ul>
+            <li>$ git touch (file name) - Creates files</li>
             <li>$ git init - Initialize local repository</li>
             <li>$ git add . - Add all to index</li>
             <li>$ git add (file name) - Add spcific file to index </li>
+            <li>$ git rm --cached (file name) - remove from index</li>
             <li>$ git status - Check status of working tree</li>
-            <li>$ git commit - Commit changes in index</li>
+            <li>$ git commit - Commit changes in index
+                <ul>
+                    <li>Example: $ git commit - Load prompt to add comments
+                        <ul>
+                            <li>Type "<strong>I</strong>" to enter edit</li>
+                            <li>Press "<strong>ESC</strong>" to exit edit</li>
+                            <li>Type "<strong>:wk</strong>" to commit changes</li>
+                            <li>Type "<strong>:exit</strong>" to exit commit terminal</li>
+                        </ul>
+                    </li>
+                    <li>Example: $ git commit -u origin2 master</li>
+                </ul>
+            </li>
             <li>$ git push - Push to remote repository
                 <ul>
                     <li>example: $ git push -u origin2 master</li>
