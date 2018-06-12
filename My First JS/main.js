@@ -38,9 +38,12 @@ function validateForm() {
 }
 
 function getAverage (a,b) {
-    var average = (a+b)/2
+    var average = (a+b)/2;
     document.write(
-        "<h2>Average between ", a , " and ", b, " is ", average, "</h2>"
+        "<h2>Average between ", a , " and ", b, " is ", Math.round(average), "</h2>"
+    );
+    document.write(
+        "<h2>The maximum number between ", a , " and ", b, " is ", Math.max(a,b), "</h2>"
     );
 }
 // var number1 = 1; // Number
