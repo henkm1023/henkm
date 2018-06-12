@@ -58,7 +58,7 @@
         <p id="sayHello"></p>
         <script>
             var yourName = prompt("What is your name?");
-            if(yourName != null) {
+            if(yourName != null && yourName != "") {
                 document.getElementById("sayHello").innerHTML = "Hello " + yourName;
             } else {
                 alert('Please provide a name');
