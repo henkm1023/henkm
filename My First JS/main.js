@@ -36,6 +36,13 @@ function validateForm() {
         return false;
     }
 }
+
+function getAverage (a,b) {
+    var average = (a+b)/2
+    document.write(
+        "<h2>Average between ", a , " and ", b, " is ", average, "</h2>"
+    );
+}
 // var number1 = 1; // Number
 // var number2 = '2'; // String
 // // JS is case sensitive

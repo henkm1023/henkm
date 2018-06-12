@@ -6,6 +6,7 @@
     <script src="main.js"></script>
 </head>
 <body id="body">
+    <div class="mustache"></div>
     <div id="main-header">
         <h1 id="heading">
             Learning JavaScript & GitHub Stuff!
@@ -91,7 +92,14 @@
             document.write("index of \"elit\": ", StringTest.indexOf("elit"), "<br/>");
             document.write(StringTest.slice(StringTest.indexOf("elit"), StringTest.indexOf("elit")+15) + "<br/>")
             document.write(StringTest.substr(StringTest.indexOf("elit"), 15) + "<br/>")
+            var links = document.getElementsByTagName("a");
+            for (i = 0; i <links.length; i++) {
+                document.write("<h1>",links[i].innerText,":</h1><p>",links[i].attributes.href.nodeValue + "</p><br/>");
+            }
+            getAverage(5,8);
         </script>    
+        </p>
+        <p>
         </p>
     </div>
     <!-- <div class="container">
