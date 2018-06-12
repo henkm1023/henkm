@@ -20,6 +20,25 @@
         </div>
     </nav>
     <div class="container">
+        <hr>
+        <h1 class="main-header">Some GIT commands</h1>
+        <ul>
+            <li>$ git init - Initialize local repository</li>
+            <li>$ git add . - Add all to index</li>
+            <li>$ git add (file name) - Add spcific file to index </li>
+            <li>$ git status - Check status of working tree</li>
+            <li>$ git commit - Commit changes in index</li>
+            <li>$ git push - Push to remote repository
+                <ul>
+                    <li>example: $ git push -u origin2 master</li>
+                </ul>
+            </li>
+            <li>$ git pull - Pull latest from remote repository</li>
+            <li>$ git clone - Clone repository into a new directory</li>
+        </ul>     
+        <hr> 
+    </div>
+    <div class="container">
         <p>
             <h1>The time is <strong id="time"></strong></h1>
             <button onclick="changeText(this)" 
@@ -54,7 +73,7 @@
         </form>
     </div>
     <br> -->
-    <div>
+    <!-- <div>
         <p id="sayHello"></p>
         <script>
             var yourName = prompt("What is your name?");
@@ -65,6 +84,6 @@
             }
             document.write("<a href='../My Webste/index.html'>Can you see your name is ",yourName,"</a>")
         </script>
-    </div>
+    </div> -->
 </body>
 </html>
