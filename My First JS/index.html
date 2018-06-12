@@ -81,6 +81,19 @@
         </select>
     </div>
     <br>
+    <div class="container">
+        <p id="bottom-padding">
+        <script>
+            var number = 1234.57;
+            var StringTest = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto commodi omnis molestiae alias temporibus optio, nesciunt ipsam animi, quasi quas nulla maiores reprehenderit fugiat quod earum mollitia perferendis impedit. Quaerat.';
+            document.write("This is how you round using JavaScript: ", (number/12).toFixed(2), "<br/>" );
+            document.write("Length of string is: ", StringTest.length, "<br/>");
+            document.write("index of \"elit\": ", StringTest.indexOf("elit"), "<br/>");
+            document.write(StringTest.slice(StringTest.indexOf("elit"), StringTest.indexOf("elit")+15) + "<br/>")
+            document.write(StringTest.substr(StringTest.indexOf("elit"), 15) + "<br/>")
+        </script>    
+        </p>
+    </div>
     <!-- <div class="container">
         <form method="post" action="images/Neutrinos  - Preface Training Material v1.2 131117.pdf" name="myForm" onsubmit="return validateForm()">
             <div>

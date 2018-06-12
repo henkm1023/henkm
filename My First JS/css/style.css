@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+#bottom-padding {
+    padding-bottom: 200px;
+}
+
 li strong {
     color: red;
 }
