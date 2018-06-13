@@ -10,13 +10,13 @@
     <div id="main-header">
         <h1 id="heading">
             Learning JavaScript & GitHub Stuff!
-        </h1>
+        </h1> 
     </div>
     <nav id="navbar">
         <div class="container">
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=0ZiltZDg9Gg">Net Ninja's JavaScript</a></li>
-                <li><a href="https://www.youtube.com/watch?v=fju9ii8YsGs">JavaScript for Beginners</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0ZiltZDg9Gg" target="_blank">Net Ninja's JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=fju9ii8YsGs" target="_blank">JavaScript for Beginners</a></li>
                 <li><a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">Some GIT Stuff</a></li>
             </ul>
         </div>
@@ -86,6 +86,7 @@
     <div class="container">
         <p id="bottom-padding">
         <script>
+            document.write("<h1 style=\"color:red\">This is this: ",this,"</h1><br/>");
             var number = 1234.57;
             var StringTest = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto commodi omnis molestiae alias temporibus optio, nesciunt ipsam animi, quasi quas nulla maiores reprehenderit fugiat quod earum mollitia perferendis impedit. Quaerat.';
             document.write("This is how you round using JavaScript: ", (number/12).toFixed(2), "<br/>" );
@@ -96,8 +97,31 @@
             var links = document.getElementsByTagName("a");
             for (i = 0; i <links.length; i++) {
                 document.write("<h1>",links[i].innerText,":</h1><p>",links[i].attributes.href.nodeValue + "</p><br/>");
-            }
-            getAverage(5,8);
+            };
+            var link = document.getElementsByTagName("a");
+            link[1].setAttribute("href","https://www.google.co.za");
+            // link[1].getAttribute("href");
+            // var Heading = document.getElementById("heading");
+            // heading.innerHTML = "Testing";
+            // getAverage(5,8);
+            // var myCar = new Object();
+            // myCar.maxSpeed = 120;
+            // myCar.driver = "Henk Meiring";
+            // myCar.drive = function(){document.write("Now driving<br/>");};
+            // myCar.drive();
+            // document.write("My car is driven by ", myCar.driver," at "
+            // , myCar.maxSpeed, "km/h<br/>");
+            // myCar2.drive(50,13);
+            // document.write("My car is driven by ", myCar2.driver," at "
+            // , myCar2.maxSpeed, "km/h<br/>");
+            // myCar.test();
+            // myCar.logDriver();
+            var myCar1 = new Car(100,"Vasher");
+            var myCar2 = new Car(120,"Henk");
+            console.log(myCar1);
+            console.log(myCar2);
+            myCar1.drive(2,5);
+            myCar2.logDriver();
         </script>    
         </p>
         <p>

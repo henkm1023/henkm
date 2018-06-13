@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-.mustache {
+/* .mustache {
     color: white;
     width: 180px;
     height: 180px;
@@ -40,7 +40,7 @@ body {
     border-radius: 0 0 100% 0;
     transform-origin: left 210px;
     transform: rotate(90deg);
-}
+} */
 
 .container {
     width: 80%;

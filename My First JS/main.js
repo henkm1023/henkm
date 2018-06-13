@@ -45,28 +45,74 @@ function getAverage (a,b) {
     document.write(
         "<h2>The maximum number between ", a , " and ", b, " is ", Math.max(a,b), "</h2>"
     );
+};
+var Car = function(maxSpeed,driver){
+    this.maxSpeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function(speed, time){
+        console.log("Now driving car");
+        console.log("Distance travelled ",speed * time,"km");
+    };
+    this.logDriver = function() {
+        console.log("Driver name is " + this.driver);
+    };
 }
-// var number1 = 1; // Number
-// var number2 = '2'; // String
-// // JS is case sensitive
-// var Test = 'This is a test';
-// var test = 'this is another test'
-// // Arrays
-// // This is an initialised array
-// var colours = [];
-// // this is an araay with vallues
-// var colours1 = ['red', 'blue', 'green'];
-// // Another way to create an array
-// var colours2 = new Array('red', 'yellow', 'green');
-// // adding to an array
-// colours2.push('purle');
-// colours2.push('purle');
-// // Loops
-// // For Loops
-// for(var i = 0; i < 10; i++) {
-//     console.log('for loop '+i);
-// }
-// // A while loop
+var myCar = {
+    maxSpeed:50, 
+    driver:"Henk Meiring",
+    drive: function(speed, time){
+        document.write("Now driving car 2<br/>");
+        document.write("Distance travelled ",speed * time,"km<br/>");
+    },
+    // test: function() {
+    //     console.log(this);
+    //     document.write(this);
+    // },
+    logDriver: function() {
+        console.log("Driver name is " + this.driver);
+    }
+};
+var birthday = new Date(1970, 0, 1, 2, 0, 0);
+console.log(birthday);
+console.log(birthday.getMonth());
+console.log(birthday.getFullYear());
+console.log(birthday.getDay()); // Day of week
+console.log(birthday.getDate());
+console.log(birthday.getHours());
+console.log(birthday.getTime()); // Get number of milliseconds since 1st Jan 1970 2am
+// var myCar3 = {
+//     maxSpeed:50, 
+//     driver:"Warbreaker",
+//     drive: function(speed, time){
+//         document.write("Now driving car 2<br/>");
+//         document.write("Distance travelled ",speed * time,"km<br/>");
+//     },
+//     test: function() {
+//         console.log(this);
+//         document.write(this);
+//     }
+// };
+// // var number1 = 1; // Number
+// // var number2 = '2'; // String
+// // // JS is case sensitive
+// // var Test = 'This is a test';
+// // var test = 'this is another test'
+// // // Arrays
+// // // This is an initialised array
+// // var colours = [];
+// // // this is an araay with vallues
+// // var colours1 = ['red', 'blue', 'green'];
+// // // Another way to create an array
+// // var colours2 = new Array('red', 'yellow', 'green');
+// // // adding to an array
+// // colours2.push('purle');
+// // colours2.push('purle');
+// // // Loops
+// // // For Loops
+// // for(var i = 0; i < 10; i++) {
+// //     console.log('for loop '+i);
+// // }
+// // // A while loop
 // var i = 0;
 // while(i < 10){
 //     console.log('while loop '+i);
