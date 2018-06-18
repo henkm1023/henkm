@@ -15,7 +15,8 @@
     <nav id="navbar">
         <div class="container">
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=0ZiltZDg9Gg" target="_blank">Net Ninja's JavaScript</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET" target="_blank">NetNinja JS Library</a></li>
+                <li><a href="https://www.youtube.com/watch?v=XQEfWd1lh4Q&index=40&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET" target="_blank">Net Ninja's JavaScript</a></li>
                 <li><a href="https://www.youtube.com/watch?v=fju9ii8YsGs" target="_blank">JavaScript for Beginners</a></li>
                 <li><a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">Some GIT Stuff</a></li>
             </ul>
@@ -83,7 +84,37 @@
         </select>
     </div>
     <br>
-    <div class="container">
+    <script>
+         var colourChanger = document.getElementById("navbar");
+         var colours = ["red","black","darkgrey"];
+         var counter = 0;
+         var ColorChangeActive = true;
+         function changeColour() {
+
+            if (counter >= colours.length) {
+                counter = 0;
+            }
+            colourChanger.style.background = colours[counter]
+            if (colours[counter] === "red") {
+                colourChanger.style.color = "black";
+            } else {
+                colourChanger.style.color = "white";
+            }
+            counter++;
+         }; 
+
+        var myTimer = setInterval(changeColour, 300);
+
+        colourChanger.onclick = function() {
+            if (ColorChangeActive === true) {
+                clearInterval(myTimer);
+            } else {
+                myTimer = setInterval(changeColour, 300);
+            }
+            ColorChangeActive = !ColorChangeActive;   
+         };
+    </script>
+    <!-- <div class="container">
         <p id="bottom-padding">
         <script>
             document.write("<h1 style=\"color:red\">This is this: ",this,"</h1><br/>");
@@ -126,7 +157,7 @@
         </p>
         <p>
         </p>
-    </div>
+    </div> -->
     <!-- <div class="container">
         <form method="post" action="images/Neutrinos  - Preface Training Material v1.2 131117.pdf" name="myForm" onsubmit="return validateForm()">
             <div>

@@ -88,8 +88,8 @@ console.log(birthday.getTime()); // Get number of milliseconds since 1st Jan 197
 //         document.write("Distance travelled ",speed * time,"km<br/>");
 //     },
 //     test: function() {
-//         console.log(this);
-//         document.write(this);
+/*         console.log(this);
+         document.write(this);*/
 //     }
 // };
 // // var number1 = 1; // Number
