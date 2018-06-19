@@ -2,6 +2,35 @@
   Hello
   <a href="">{{name}}</a>
 </p>
-<h2>You are here> {{siteUrl}}<h2>
+<div>
+  <hr>
+  <h1>This is binding classes in Angular!!!!!</h1>
+  <h3 [class]="isGood">Green for go</h3>
+  <h3 [class]="isBad">Red for Danger</h3>
+  <h3 [class]="isSpecial">Italiano...ics</h3>
+  <h3 [class.text-danger]="hasError">Is this an error or a dream?</h3>
+  <h3 [ngClass]="classes">Am I good or bad in a special kinda way?</h3>
+</div>
+<div>
+  <hr>
+  <h1>And next we have style binding!!!</h1>
+  <h2 [style.color]="hasError ? 'Red' : 'green'">Whoop Whoop!</h2>
+  <h2 [style.color]="!hasError ? 'Red' : 'green'">Whoop Whoop!</h2>
+  <h2 [style.color]="anotherColor">Whoop Whoop!</h2>
+  <h2 [ngStyle]="titleStyles">Whoop Whoop!</h2>
+</div>
+<div>
+  <hr>
+  <h1>Event stuff!!!</h1>
+  <h2>let's get to clicking!!!</h2>
+  <button class="buttons" (click)="onClick($event)">This is a button.<br>It is an awesome button.<br>It's the best button in the world.<br>It's my button.<br></button>
+  <p>{{clickInfo}}</p>
+  <p [ngStyle]="titleStyles">{{greeting}}</p>
+</div>
+<div>
+  <hr>
+  <h2>You are here> {{siteUrl}}</h2>
   <input [id]="myId" type="text" value="Henk">
+  <br>
   <input [disabled]="isDisabled" [id]="myId" type="text" value="Henk">
+</div>

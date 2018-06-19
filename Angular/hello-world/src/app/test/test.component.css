@@ -1,0 +1,19 @@
+.text-success {
+    color: green;
+}
+.text-danger {
+    color:red;
+}
+.text-special {
+    font-style: italic;
+    font-weight: bolder;
+}
+.buttons {
+    color: black;
+    padding: 5px;
+    border: solid 2px black;
+    background-color: grey;
+    width: 200px;
+    position: center;
+    margin-left: 90px;
+}
