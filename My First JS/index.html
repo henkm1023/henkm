@@ -6,7 +6,7 @@
     <script src="main.js"></script>
 </head>
 <body id="body">
-    <div class="mustache"></div>
+    <!-- <div class="mustache"></div> -->
     <div id="main-header">
         <h1 id="heading">
             Learning JavaScript & GitHub Stuff!
@@ -87,9 +87,28 @@
     <br>
     <script>
          var colourChanger = document.getElementById("navbar");
-         var colours = ["red","black","darkgrey"];
+         var colourMainChanger = document.getElementById("body");
+         var colours = ["red","black","darkgrey","yellow","orange","purple","green","blue"];
+         var mainColours = ["black","blue","darkgrey"];
          var counter = 0;
+         var mainCounter = 0;
          var ColorChangeActive = true;
+         var ColorChangeMainActive = true;
+         var Intervals = 1000;
+         var Intervals = 3000;
+         function changeMainColour() {
+
+            if (mainCounter >= mainColours.length) {
+                mainCounter = 0;
+            }
+            colourMainChanger.style.background = mainColours[mainCounter]
+            if (mainColours[mainCounter] === "red") {
+                colourMainChanger.style.color = "black";
+            } else {
+                colourMainChanger.style.color = "white";
+            }
+            mainCounter++;
+         }; 
          function changeColour() {
 
             if (counter >= colours.length) {
@@ -104,15 +123,25 @@
             counter++;
          }; 
 
-        var myTimer = setInterval(changeColour, 300);
+        var myTimer = setInterval(changeColour, Intervals);
+        var myMainTimer = setInterval(changeMainColour, Intervals);
 
         colourChanger.onclick = function() {
             if (ColorChangeActive === true) {
                 clearInterval(myTimer);
             } else {
-                myTimer = setInterval(changeColour, 300);
+                myTimer = setInterval(changeColour, Intervals);
             }
             ColorChangeActive = !ColorChangeActive;   
+         };
+         
+        colourMainChanger.onclick = function() {
+            if (ColorChangeMainActive === true) {
+                clearInterval(myMainTimer);
+            } else {
+                myMainTimer = setInterval(changeMainColour, Intervals);
+            }
+            ColorChangeMainActive = !ColorChangeMainActive;   
          };
     </script>
     <!-- <div class="container">
