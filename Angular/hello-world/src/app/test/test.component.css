@@ -17,3 +17,9 @@
     position: center;
     margin-left: 90px;
 }
+.inputStyle {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    width: 340px;
+}

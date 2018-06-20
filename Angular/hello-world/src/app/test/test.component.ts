@@ -53,4 +53,7 @@ export class TestComponent implements OnInit {
       this.greeting = '';
     }
   }
+  logMessage(value) {
+    this.greeting = value;
+  }
 }

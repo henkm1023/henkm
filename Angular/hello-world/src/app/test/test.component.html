@@ -19,18 +19,23 @@
   <h2 [style.color]="anotherColor">Whoop Whoop!</h2>
   <h2 [ngStyle]="titleStyles">Whoop Whoop!</h2>
 </div>
-<div>
+<div class="OnClicker">
   <hr>
   <h1>Event stuff!!!</h1>
   <h2>let's get to clicking!!!</h2>
   <button class="buttons" (click)="onClick($event)">This is a button.<br>It is an awesome button.<br>It's the best button in the world.<br>It's my button.<br></button>
   <p>{{clickInfo}}</p>
   <p [ngStyle]="titleStyles">{{greeting}}</p>
+  <input class="inputStyle" #myInput type="password"> <br>
+  <button class="buttons" (click)="logMessage(myInput.value)">Login</button><br>
+  <!-- Two way binding -->
+  <input class="inputStyle" [(ngModel)]="pword" type="password"> <br>
+  <p [ngStyle]="titleStyles">{{pword}} </p>
 </div>
-<div>
+<!-- <div>
   <hr>
   <h2>You are here> {{siteUrl}}</h2>
   <input [id]="myId" type="text" value="Henk">
   <br>
   <input [disabled]="isDisabled" [id]="myId" type="text" value="Henk">
-</div>
+</div> -->
