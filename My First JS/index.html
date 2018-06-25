@@ -16,6 +16,7 @@
         <div class="container">
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=nWst87nQmZQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=12" target="_blank">Angular</a></li>
+                <li><a href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course">Angular Crash Course</a></li>
                 <li><a href="http://localhost:4200/" target="_blank">Let's go-go Hello-World</a></li>
                 <li><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET" target="_blank">NetNinja JS Library</a></li>
                 <li><a href="https://www.youtube.com/watch?v=XQEfWd1lh4Q&index=40&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET" target="_blank">Net Ninja's JavaScript</a></li>
@@ -69,6 +70,11 @@
         <h1 class="main-header">Some Angular commands</h1>
         <ul>
             <li>ng serve - Start hosting my App</li>
+            <li>ng new [project name] - Create a new app</li>
+            <li>ng generate component [component name]</li>
+            <ul>
+                <li>Shorthand command: ng g c [name]</li>
+            </ul>
         </ul>     
         <hr> 
     </div>
@@ -131,14 +137,14 @@
             counter++;
          }; 
 
-        var myTimer = setInterval(changeColour, Intervals);
-        var myMainTimer = setInterval(changeMainColour, Intervals);
+        // var myTimer = setInterval(changeColour, Intervals);
+        // var myMainTimer = setInterval(changeMainColour, Intervals);
 
         colourChanger.onclick = function() {
             if (ColorChangeActive === true) {
                 clearInterval(myTimer);
             } else {
-                myTimer = setInterval(changeColour, Intervals);
+                // myTimer = setInterval(changeColour, Intervals);
             }
             ColorChangeActive = !ColorChangeActive;   
          };
@@ -147,7 +153,7 @@
             if (ColorChangeMainActive === true) {
                 clearInterval(myMainTimer);
             } else {
-                myMainTimer = setInterval(changeMainColour, Intervals);
+                // myMainTimer = setInterval(changeMainColour, Intervals);
             }
             ColorChangeMainActive = !ColorChangeMainActive;   
          };

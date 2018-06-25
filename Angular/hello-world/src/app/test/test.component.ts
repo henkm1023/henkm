@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  @Input() public parentData;
+  @Output() public childEvent = new EventEmitter();
   public name = 'Henk';
   public siteUrl = window.location.href;
   public myId = 'TG';
@@ -19,6 +21,8 @@ export class TestComponent implements OnInit {
   public greeting;
   public clickInfo;
   public clicker = false;
+  public displayName = false;
+  public date = new Date();
   public classes = {
     'text-success' : !this.hasError,
     'text-danger' : this.hasError,
@@ -40,15 +44,20 @@ export class TestComponent implements OnInit {
 
   ngOnInit() {
   }
+  fireEvent() {
+    this.childEvent.emit('Hello yourself');
+  }
   onClick (event) {
     console.log('And the button says Hi!');
     console.log(event);
     this.clickInfo = 'pointer position was x:' + event.clientX + ' y:' + event.clientY;
     if (this.clicker === false) {
+      this.displayName = true;
       this.clicker = true;
       this.greeting = 'Oh my gosh you clicked me! You actually clicked me! Ohmygoshohmygoshohmygosh!!!! by theway, this was a '
                     + event + ' event';
     } else {
+      this.displayName = false;
       this.clicker = false;
       this.greeting = '';
     }
