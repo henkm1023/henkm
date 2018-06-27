@@ -43,7 +43,7 @@ body {
 } */
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
 }
@@ -56,6 +56,27 @@ li strong {
     color: red;
 }
 
+strong:hover {
+    text-decoration: underline;
+}
+
+#keyword {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    color: #0011fa;
+}
+
+#example {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(144, 226, 247)
+}
+#fix-me {
+    position: fixed;
+    /* top: 400px; */
+}
+
 #main-header {
     /* background-color: black; */
     color: #fff;
@@ -66,12 +87,14 @@ li strong {
 }
 
 #navbar {
+    position: sticky;
+    top: 0;
     background-color: rgb(31, 30, 30);
     color:white;
 }
 
 #navbar ul {
-    padding: 0;
+    padding: 10;
     list-style: none;
 }
 
